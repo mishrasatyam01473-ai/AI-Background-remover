@@ -15,9 +15,10 @@ if img_file:
     st.image(resized_img)
     if st.button("Remove background"):
         with st.spinner("Removing Background..... Please wait for few seconds."):
-            output_img = remove(img)
+        output_img = remove(img)
         
         st.subheader("Background removed")
         showing_img = output_img.resize((500,500))
         st.image(showing_img)
+
 
